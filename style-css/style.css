@@ -4,15 +4,123 @@
   box-sizing: border-box;
 }
 
-
-.title{
+body{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 45px;
-  display:inline-block;
+  background-color: #F6F8F9;
 }
 
-#container{
-  
+.container{
+  width: 70%;
+  margin: 40px auto;
+  background-color: white;
+  border-radius: 5px;
+}
 
+/* button */
+.btn{
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
+.btn.btn-filled{
+  background-color: #47ADF1;
+  color: white;
+  border: 1px solid #47ADF1;
+}
+
+.btn.btn-empty{
+  background-color: white;
+  color: lightgray;
+  border: 1px solid lightgray;
+}
+
+header{
+  background-color: white;
+  height: 70px;
+  padding: 10px 20px;
+}
+
+header img{
+  height: 100%;
+  vertical-align: middle;
+}
+
+header .logo-text{
+  font-size: 38px;
+  font-weight: 900;
+  vertical-align: middle;
+}
+
+.container .top{
+  padding: 20px 50px;
+  border-bottom: 1px solid #F6F8F9;
+}
+
+.container .tasks{
+  padding: 20px 50px;
+}
+
+.tasks ul{
+  list-style: none;
+}
+
+.tasks ul li h3, .tasks ul li{
+  margin-bottom: 30px;
+}
+
+.tasks ul li h3::before{
+  content: '\25BE';
+  padding-right: 5px;
+}
+
+li .circle::before{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 50%;
+  font-size: 10px;
+}
+
+li .circle.checked::before{
+  content: '\2713';
+  color: green;
+  border: 1px solid green;
+}
+
+li .circle.unchecked::before{
+  content: '\2715';
+  color: red;
+  border: 1px solid red;
+}
+
+.tag{
+  font-size: 10px;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.tag.editorial{
+  background-color: #45AAE9;
+}
+
+.tag.recruting{
+  background-color: #64C0A9;
+}
+
+.tag.mobile{
+  background-color: #F29E32;
+}
+
+.tag.sales{
+  background-color: #B0C926;
+}
+
+.tag.q1{
+  background-color: #9C73E4;
 }
